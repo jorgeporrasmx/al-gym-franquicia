@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  turbopack: {
+    root: "/Users/jorgeporras/Documents/CODIGO/al-gym-franquicia",
+  },
 };
 
 export default nextConfig;
