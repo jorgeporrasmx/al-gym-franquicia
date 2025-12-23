@@ -498,7 +498,7 @@ export default function Home() {
                 <div className="flex justify-between items-center p-4 bg-[#1A1A2E] rounded-lg">
                   <span className="text-gray-300">Equipamiento Completo</span>
                   <span className="text-xl font-bold text-[#FF6B35]">
-                    $5,000,000 MXN
+                    $5,750,000 MXN
                   </span>
                 </div>
                 <Separator className="bg-gray-700" />
@@ -507,7 +507,7 @@ export default function Home() {
                     TOTAL INVERSIÓN
                   </span>
                   <span className="text-2xl font-bold text-[#FF6B35]">
-                    $5,250,000 MXN
+                    $6,000,000 MXN
                   </span>
                 </div>
               </CardContent>
@@ -527,7 +527,7 @@ export default function Home() {
                   <h4 className="text-white font-semibold mb-3">Condiciones Pre-aprobadas</h4>
                   <div className="grid grid-cols-2 gap-4">
                     <div className="text-center p-3 bg-[#2D2D44] rounded-lg">
-                      <div className="text-2xl font-bold text-[#FF6B35]">$5M</div>
+                      <div className="text-2xl font-bold text-[#FF6B35]">$5.75M</div>
                       <div className="text-gray-400 text-xs">Monto financiable</div>
                     </div>
                     <div className="text-center p-3 bg-[#2D2D44] rounded-lg">
@@ -539,7 +539,7 @@ export default function Home() {
                       <div className="text-gray-400 text-xs">Tasa anual aprox.</div>
                     </div>
                     <div className="text-center p-3 bg-[#2D2D44] rounded-lg">
-                      <div className="text-2xl font-bold text-[#FF6B35]">~$145K</div>
+                      <div className="text-2xl font-bold text-[#FF6B35]">~$167K</div>
                       <div className="text-gray-400 text-xs">Pago mensual</div>
                     </div>
                   </div>
@@ -564,7 +564,7 @@ export default function Home() {
 
                 <div className="p-3 bg-blue-500/10 border border-blue-500/30 rounded-lg">
                   <p className="text-blue-400 text-sm">
-                    <strong>Nota:</strong> El pago del financiamiento (~$145K/mes) está incluido en los costos operativos de las proyecciones.
+                    <strong>Nota:</strong> El pago del financiamiento (~$167K/mes) está incluido en los costos operativos de las proyecciones.
                   </p>
                 </div>
               </CardContent>
