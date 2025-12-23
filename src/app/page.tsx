@@ -170,6 +170,48 @@ const MenuIcon = () => (
   </svg>
 );
 
+// Logo AL GYM Component
+const AlGymLogo = ({ className = "", size = "default" }: { className?: string; size?: "small" | "default" | "large" }) => {
+  const sizes = {
+    small: { height: 32, fontSize: "text-xl" },
+    default: { height: 40, fontSize: "text-2xl" },
+    large: { height: 56, fontSize: "text-4xl" },
+  };
+  const { height } = sizes[size];
+
+  return (
+    <svg
+      viewBox="0 0 200 60"
+      height={height}
+      className={className}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      {/* Letter 'a' - Gray */}
+      <text x="0" y="48" fontFamily="Arial Black, Arial, sans-serif" fontSize="52" fontWeight="900" fill="#9CA3AF">
+        a
+      </text>
+      {/* Letter 'l' - Gray */}
+      <text x="32" y="48" fontFamily="Arial Black, Arial, sans-serif" fontSize="52" fontWeight="900" fill="#9CA3AF">
+        l
+      </text>
+      {/* Letter 'g' - Orange */}
+      <text x="52" y="48" fontFamily="Arial Black, Arial, sans-serif" fontSize="52" fontWeight="900" fill="#FF6B35">
+        g
+      </text>
+      {/* Letter 'y' - Orange */}
+      <text x="88" y="48" fontFamily="Arial Black, Arial, sans-serif" fontSize="52" fontWeight="900" fill="#FF6B35">
+        y
+      </text>
+      {/* Letter 'm' - Orange */}
+      <text x="118" y="48" fontFamily="Arial Black, Arial, sans-serif" fontSize="52" fontWeight="900" fill="#FF6B35">
+        m
+      </text>
+      {/* Dot above 'y' - Orange */}
+      <circle cx="107" cy="8" r="5" fill="#FF6B35"/>
+    </svg>
+  );
+};
+
 export default function Home() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -218,13 +260,8 @@ export default function Home() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 md:h-20">
-            <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-gradient-to-br from-[#FF6B35] to-[#E55A2B] rounded-lg flex items-center justify-center">
-                <DumbbellIcon />
-              </div>
-              <span className="text-2xl font-bold bg-gradient-to-r from-[#FF6B35] to-[#FF8C5A] bg-clip-text text-transparent">
-                AL GYM
-              </span>
+            <div className="flex items-center">
+              <AlGymLogo size="default" className="hover:opacity-90 transition-opacity cursor-pointer" />
             </div>
 
             {/* Desktop Menu */}
@@ -298,6 +335,11 @@ export default function Home() {
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          {/* Logo prominente en el hero */}
+          <div className="flex justify-center mb-8">
+            <AlGymLogo size="large" className="scale-150 md:scale-[2]" />
+          </div>
+
           <Badge className="mb-6 bg-[#FF6B35]/20 text-[#FF6B35] border-[#FF6B35]/30 px-4 py-2">
             +15 años de experiencia en el sector fitness
           </Badge>
@@ -1467,13 +1509,8 @@ export default function Home() {
       <footer className="py-12 bg-[#1A1A2E] border-t border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-            <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-gradient-to-br from-[#FF6B35] to-[#E55A2B] rounded-lg flex items-center justify-center">
-                <DumbbellIcon />
-              </div>
-              <span className="text-2xl font-bold bg-gradient-to-r from-[#FF6B35] to-[#FF8C5A] bg-clip-text text-transparent">
-                AL GYM
-              </span>
+            <div className="flex items-center">
+              <AlGymLogo size="default" />
             </div>
 
             <p className="text-gray-400 text-center md:text-left">
