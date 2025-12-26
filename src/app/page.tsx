@@ -357,7 +357,7 @@ export default function Home() {
 
           <p className="text-lg text-gray-500 mb-8 max-w-2xl mx-auto">
             La evolución de los gimnasios tradicionales hacia un modelo
-            completamente automatizado, con tecnología de punta y enfoque en la
+            automatizado, con tecnología de punta y enfoque en la
             experiencia del usuario.
           </p>
 
@@ -384,7 +384,7 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
             {[
               { value: "24/7", label: "Acceso Total" },
-              { value: "80%", label: "Automatizado" },
+              { value: "Semi", label: "Automatizado" },
               { value: "35", label: "Meses ROI" },
               { value: "$250K", label: "Inversión Inicial" },
             ].map((stat, index) => (
@@ -418,8 +418,7 @@ export default function Home() {
               ¿Por qué elegir AL GYM?
             </h2>
             <p className="text-gray-400 max-w-2xl mx-auto">
-              Nuestra propuesta única nos diferencia de la competencia
-              tradicional
+              Nuestra propuesta única nos diferencia de la competencia.
             </p>
           </div>
 
@@ -433,7 +432,7 @@ export default function Home() {
               },
               {
                 icon: <CpuIcon />,
-                title: "80% Automatizado",
+                title: "Semi-Automatizado",
                 description: "Sistema integral de ventas, cobranza y seguimiento",
               },
               {
@@ -941,7 +940,7 @@ export default function Home() {
               <CardContent className="space-y-4">
                 {[
                   "Atención personalizada no intimidante",
-                  "Sistema 80% automatizado",
+                  "Sistema semi-automatizado",
                   "Marketing integral incluido",
                   "Financiamiento pre-aprobado",
                   "Enfoque en principiantes",
